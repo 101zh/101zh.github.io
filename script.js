@@ -1,1 +1,1 @@
-window.location.href = "https://github.com/101zh/";
+location.replace('https://github.com/101zh/');
