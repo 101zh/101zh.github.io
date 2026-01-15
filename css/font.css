@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "jost-semi";
+    src: url("../assets/Jost/TrueType/Jost-600-Semi.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: "jost-black";
+    src: url("../assets/Jost/TrueType/Jost-900-Black.ttf") format(truetype);
+}
