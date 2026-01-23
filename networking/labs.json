@@ -1,0 +1,16 @@
+{
+    "labs": [
+        {
+            "name": "LAB 0",
+            "filename": "test"
+        },
+        {
+            "name": "LAB 3",
+            "filename": "test3"
+        },
+        {
+            "name": "LAB 1",
+            "filename": "test1"
+        }
+    ]
+}
