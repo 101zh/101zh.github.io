@@ -1,16 +1,28 @@
 {
     "labs": [
         {
-            "name": "LAB 0",
-            "filename": "test"
+            "name": "External Border Gateway Protocol",
+            "filename": "eBGPLab"
         },
         {
-            "name": "LAB 3",
-            "filename": "test3"
+            "name": "Internal Border Gateway Protocol",
+            "filename": "iBGPLab"
         },
         {
-            "name": "LAB 1",
-            "filename": "test1"
+            "name": "IS-IS Routing Protocol",
+            "filename": "IS-ISRoutingLab"
+        },
+        {
+            "name": "Layer 2 Attacks",
+            "filename": "Layer2AttacksLab"
+        },
+        {
+            "name": "Multi-Area OSPF Configuration",
+            "filename": "MultiareaOSPFLab"
+        },
+        {
+            "name": "Standalone Access Point",
+            "filename": "StandaloneAccessPointLab"
         }
     ]
 }

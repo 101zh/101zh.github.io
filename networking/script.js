@@ -3,8 +3,8 @@ const container = document.getElementById("container")
 const html =
   `<a href="./labs/filename.pdf">
             <div class="block">
-                <div class="descrip">labname</div>
                 <div class="thumbnail"><img src="./lab-thumbnails/filename.png"></div>
+                <div class="descrip">labname</div>
             </div>
         </a>`
 
