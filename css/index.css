@@ -1,7 +1,9 @@
 body,
 h1 {
-    font-family: jost-semi, Arial, sans-serif;
     background-color: black;
     color: white;
-    margin: 0;
+}
+
+* {
+    font-family: jost-semi, Arial, sans-serif;
 }
