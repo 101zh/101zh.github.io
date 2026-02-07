@@ -5,12 +5,14 @@
     align-items: center;
 }
 
-.button {
+.glowButton {
     display: flex;
     position: relative;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0);
     margin: 1rem;
+    
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 @keyframes glowPulse {
@@ -38,7 +40,6 @@
     z-index: -1;
     opacity: 0.5;
     filter: blur(0.8rem);
-    background: #8500bd;
     transition: transform 1.0s;
     transform: scale(1);
 
@@ -48,7 +49,7 @@
     animation-iteration-count: infinite;
 }
 
-.button:hover .glow {
+.glowButton:hover .glow {
     transition: 0.5s;
     transform: scale(1.15);
 }
@@ -67,11 +68,8 @@
     height: 100%;
 
     font-family: inherit;
-    background-color: #212121;
-    color: white;
     border-style: solid;
     border-radius: .5rem;
-    border-color: #8500bd;
 
     cursor: pointer;
 }
