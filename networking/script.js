@@ -1,12 +1,10 @@
 const container = document.getElementById("container")
 
 const html =
-  `<a href="./labs/filename.pdf">
-            <div class="block">
+  `         <div class="block">
                 <div class="thumbnail"><img src="./lab-thumbnails/filename.png"></div>
                 <div class="descrip">labname</div>
-            </div>
-        </a>`
+            </div>`
 
 fetch("labs.json")
   .then(response => response.text())
@@ -15,15 +13,16 @@ fetch("labs.json")
     for (let i = 0; i < labInfoArray.length; i++) {
       const lab = labInfoArray[i];
       console.log(container)
-      container.appendChild(createElementFromHTML(html.replaceAll("filename", lab["filename"]).replace("labname", lab["name"])))
+      container.appendChild(createElementFromHTML(html.replaceAll("filename", lab["filename"]).replace("labname", lab["name"]), "./labs/" + lab["filename"] + ".pdf"))
     }
   })
   .catch((e) => console.error(e));
 
 
-function createElementFromHTML(htmlString) {
-  var div = document.createElement('a');
-  div.innerHTML = htmlString.trim();
+function createElementFromHTML(htmlString, href) {
+  var a = document.createElement('a');
+  a.innerHTML = htmlString.trim();
+  a.href = href
 
-  return div;
+  return a;
 }
