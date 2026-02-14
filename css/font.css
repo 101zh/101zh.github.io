@@ -4,6 +4,16 @@
 }
 
 @font-face {
-    font-family: "jost-black";
-    src: url("../assets/Jost/TrueType/Jost-900-Black.ttf") format(truetype);
+    font-family: "jost-medium";
+    src: url("../assets/Jost/TrueType/Jost-500-Medium.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: "atami-display";
+    src: url("../assets/Atami - Full Font/Atami-Display-Regular.otf") format(opentype);
+}
+
+@font-face {
+    font-family: "atami-display";
+    src: url("../assets/Atami - Full Font/Atami-Stencil.otf") format(opentype);
 }
