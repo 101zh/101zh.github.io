@@ -10,7 +10,7 @@
 #container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 3rem;
     justify-content: space-evenly;
 }
@@ -30,15 +30,16 @@
     z-index: 0;
     filter: saturate(80%) brightness(80%);
     position: relative;
-    top: 0;
+    top: 0; 
     transform: scale(1);
-    transition: filter ease 0.2s, top ease 0.2s, transform ease 0.2s, z-index 0.0s;
+    transition: filter ease 0.25s, top ease 0.1s, transform ease 0.175s, z-index 0.0s;
 }
 
 .block:hover {
     z-index: 2;
+    top: -1rem;
     filter: saturate(100%) brightness(100%);
-    transform: scale(1.1)
+    transform: scale(1.05)
 }
 
 .descrip {
@@ -66,4 +67,21 @@
     height: 100%;
     object-position: center;
     object-fit: contain;
+}
+
+.repository {
+    margin: 0.25rem;
+    text-decoration: none;
+}
+
+.repository .text {
+    background-color: black;
+    color: white;
+    border-color: aquamarine;
+}
+
+.test{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
