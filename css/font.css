@@ -9,11 +9,11 @@
 }
 
 @font-face {
-    font-family: "atami-display";
-    src: url("../assets/Atami - Full Font/Atami-Display-Regular.otf") format(opentype);
+    font-family: "atami-stencil-bold";
+    src: url("../assets/Atami - Full Font/Atami-Stencil-Bold.otf") format(opentype);
 }
 
 @font-face {
-    font-family: "atami-display";
+    font-family: "atami-stencil";
     src: url("../assets/Atami - Full Font/Atami-Stencil.otf") format(opentype);
 }
