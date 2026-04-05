@@ -20,6 +20,13 @@
 }
 
 @font-face {
+    font-family: "Jost";
+    src: url("../assets/Jost/TrueType/Jost-400-Book.ttf") format(truetype);
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Terminus";
     src: url("../assets/Terminus/TerminusTTF-Bold-4.49.3.ttf") format(truetype);
     font-weight: bold;

@@ -7,22 +7,23 @@
 
 @media (orientation: landscape) {
     .header {
-        width: 70vw;
+        width: 60vw;
         margin-left: auto;
         margin-right: auto;
     }
 
     #pfpContainer {
-        max-width: 30vh !important;
-        min-width: 20vh !important;
+        max-width: 20vh !important;
+        min-width: 10vh !important;
     }
 
     .main {
-        width: 70vw;
+        width: 60vw;
         margin-left: auto;
         margin-right: auto;
     }
 }
+
 
 #headerBackground {
     width: 100%;
@@ -55,6 +56,19 @@
 
 .subscript {
     overflow-wrap: anywhere;
+}
+
+#bio{
+    display: none;
+    margin-top: 0.5rem;
+    font-family: Jost, Terminus, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+@media (width>=550px){
+    #bio{
+        display: flex;
+    }
 }
 
 #pfp {
