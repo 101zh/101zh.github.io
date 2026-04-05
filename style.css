@@ -2,19 +2,25 @@
     padding: 2rem 1rem 2rem 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 @media (orientation: landscape) {
-    .header{
+    .header {
         width: 70vw;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #pfpContainer{
+    #pfpContainer {
         max-width: 30vh !important;
         min-width: 20vh !important;
+    }
+
+    .main {
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -29,6 +35,7 @@
 .titleContainer {
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
 }
 
 #pfpContainer {
@@ -44,18 +51,10 @@
     overflow-wrap: anywhere;
     font-size: 2rem;
     text-align: left;
-    font-family: jost-semi;
 }
 
 .subscript {
     overflow-wrap: anywhere;
-}
-
-#lowerBody {
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    margin-top: 1rem;
 }
 
 #pfp {
@@ -67,27 +66,68 @@
 
 .main {
     margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-
-
-
-.links {
+    padding: 0rem 1rem 0rem 1rem;
     display: flex;
-    flex-grow: 5;
-    flex-shrink: 0;
-
-    justify-content: center;
+    flex-direction: column;
 }
 
-.networking .glow {
-    background: aquamarine;
+.section {
+    margin: .5rem 0rem .5rem 0rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.networking .text {
-    background-color: black;
-    color: white;
-    border-color: aquamarine;
+.sectionHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sectionName {
+    font-weight: bold;
+}
+
+.sectionMore {
+    text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 0.3s;
+}
+
+.sectionMore:hover {
+    text-decoration-color: white;
+    text-decoration: underline 0.1em;
+}
+
+.sectionBody {
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+#networkingSectionBody{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    align-content: stretch;
+}
+
+.block {
+    box-sizing: border-box;
+    background-color: rgb(3, 3, 3);
+    border: 0.1rem solid white;
+    padding: .8rem;
+}
+
+.block:hover .blockTitle {
+    text-decoration-color: white;
+    text-decoration: underline 0.1em;
+}
+
+.blockTitle {
+    margin: 0rem auto 0.5rem 0rem;
+    font-weight: bold;
+    text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 0.3s;
+}
+
+.blockBody {
+    color: rgb(168, 168, 168);
 }

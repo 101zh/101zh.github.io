@@ -1,13 +1,10 @@
-#header{
+.header{
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
-
-    font-family: jost-medium;
 }
 
-#title {
-    font-size: 3rem;
+.title {
     line-height: 3.5rem;
 }
 

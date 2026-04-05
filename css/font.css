@@ -1,19 +1,34 @@
 @font-face {
-    font-family: "jost-semi";
+    font-family: "Jost";
     src: url("../assets/Jost/TrueType/Jost-600-Semi.ttf") format(truetype);
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "jost-medium";
+    font-family: "Jost";
+    src: url("../assets/Jost/TrueType/Jost-800-Heavy.ttf") format(truetype);
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Jost";
     src: url("../assets/Jost/TrueType/Jost-500-Medium.ttf") format(truetype);
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "atami-stencil-bold";
-    src: url("../assets/Atami - Full Font/Atami-Stencil-Bold.otf") format(opentype);
+    font-family: "Terminus";
+    src: url("../assets/Terminus/TerminusTTF-Bold-4.49.3.ttf") format(truetype);
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "atami-stencil";
-    src: url("../assets/Atami - Full Font/Atami-Stencil.otf") format(opentype);
+    font-family: "Terminus";
+    src: url("../assets/Terminus/TerminusTTF-4.49.3.ttf") format(truetype);
+    font-weight: normal;
+    font-style: normal;
 }

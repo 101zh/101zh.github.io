@@ -1,11 +1,34 @@
 body,
-h1 {
+h1,
+h2,
+h3,
+p,
+span,
+a {
     background-color: black;
     color: white;
-    padding: 0px;
-    margin: 0px;
 }
 
 * {
-    font-family: jost-semi, Arial, sans-serif;
+    font-family: Terminus, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.title,
+.header,
+.subscript {
+    font-family: Jost, Terminus, Arial, sans-serif;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.subscript {
+    font-weight: 600;
+    font-size: 1rem;
 }

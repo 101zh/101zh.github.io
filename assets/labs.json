@@ -1,0 +1,34 @@
+{
+    "labs": [
+        {
+            "name": "External Border Gateway Protocol",
+            "filename": "eBGPLab",
+            "one-liner": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet venenatis eros."
+        },
+        {
+            "name": "Internal Border Gateway Protocol",
+            "filename": "iBGPLab",
+            "one-liner": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet venenatis eros."
+        },
+        {
+            "name": "IS-IS Routing Protocol",
+            "filename": "IS-ISRoutingLab",
+            "one-liner": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet venenatis eros."
+        },
+        {
+            "name": "Layer 2 Attacks",
+            "filename": "Layer2AttacksLab",
+            "one-liner": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet venenatis eros."
+        },
+        {
+            "name": "Multi-Area OSPF Configuration",
+            "filename": "MultiareaOSPFLab",
+            "one-liner": "A \"how to\" for multi-area OSPF (3 areas; 2 routers in each)"
+        },
+        {
+            "name": "Standalone Access Point",
+            "filename": "StandaloneAccessPointLab",
+            "one-liner": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet venenatis eros."
+        }
+    ]
+}
