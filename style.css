@@ -26,7 +26,7 @@
     background-size: cover;
 }
 
-.title {
+.titleContainer {
     display: flex;
     flex-direction: column;
 }
@@ -40,11 +40,15 @@
     transform: rotate(-5deg)
 }
 
-.subscript {
+.title {
     overflow-wrap: anywhere;
     font-size: 2rem;
     text-align: left;
     font-family: jost-semi;
+}
+
+.subscript {
+    overflow-wrap: anywhere;
 }
 
 #lowerBody {
@@ -68,9 +72,7 @@
 }
 
 
-#bio {
-    overflow-wrap: anywhere;
-}
+
 
 .links {
     display: flex;
