@@ -4,7 +4,7 @@ const labs = []
 const maxLabsShown = 4
 
 const html =
-    `   <div class="block">
+    `   <div class="block on-hover-up">
             <div class="blockTitle">labname</div>
             <div class="blockBody">ONELINER</div>
         </div>
