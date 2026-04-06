@@ -3,7 +3,7 @@ const container = document.getElementById("container")
 const html =
   `   <div class="block">
             <div class="labTitle">labname</div>
-            <div class="thumbnail"><img src="./lab-thumbnails/filename.png"></div>
+            <div class="thumbnail"><img src="./lab-thumbnails/filename.jpg"></div>
         </div>
     `
 
@@ -37,7 +37,7 @@ function showDetails(lab) {
     <div id="modal-left">
         <h2 class="modal-title">${lab["name"]}</h2>
         <div class="modal-image-container">
-            <img class="modal-image" src="./lab-thumbnails/${lab["filename"]}.png">
+            <img class="modal-image" src="./lab-thumbnails/${lab["filename"]}.jpg">
         </div>
     </div>
     <div id="modal-right">
