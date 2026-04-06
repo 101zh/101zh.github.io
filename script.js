@@ -27,6 +27,7 @@ function createElementFromHTML(htmlString, href) {
     var a = document.createElement("a");
     a.innerHTML = htmlString.trim();
     a.href = href
+    a.target = "_blank"
     a.style.display = "flex"
     labs.push(a)
 
