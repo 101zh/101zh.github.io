@@ -1,7 +1,7 @@
 const container = document.getElementById("networkingSectionBody")
 const labs = []
 
-const maxLabsShown = 3
+const maxLabsShown = 4
 
 const html =
     `   <div class="block">
@@ -14,7 +14,7 @@ fetch("../assets/labs.json")
     .then(response => response.text())
     .then((textContent) => {
         const labInfoArray = JSON.parse(textContent)["labs"]
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < maxLabsShown; i++) {
             const lab = labInfoArray[i];
             console.log(container)
             container?.appendChild(createElementFromHTML(html.replace("filename", lab["filename"]).replace("labname", lab["name"]).replace("ONELINER", lab["one-liner"]), "../networking/labs/" + lab["filename"] + ".pdf"))

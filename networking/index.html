@@ -13,14 +13,27 @@
 
 <body>
 
-
     <div class="header">
+        <div class="backButton">
+            <a href="../">
+                < Back</a>
+        </div>
         <h1 class="title">Networking Labs</h1>
-        <div class="subscript">Documentation and write-ups for various networking and cybersecurity related
+        <div id="pagedescrip" class="subscript">Documentation and write-ups for various networking and cybersecurity
+            related
             configurations</div>
+        <div style="font-weight: bold;" class="subscript">Click on one to see the full report!</div>
     </div>
 
     <div id="container">
+    </div>
+
+    <div id="labModal" class="modal">
+        <div class="modal-content">
+            <div class="close-button-container"><span class="close-button">&times;</span></div>
+            <div id="modal-details">
+            </div>
+        </div>
     </div>
 
 </body>

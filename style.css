@@ -125,9 +125,10 @@
 
 .block {
     box-sizing: border-box;
-    background-color: rgb(3, 3, 3);
+    background-color: rgb(4, 4, 0);
     border: 0.1rem solid white;
     padding: .8rem;
+    flex-grow: 1;
 }
 
 .block:hover .blockTitle {
