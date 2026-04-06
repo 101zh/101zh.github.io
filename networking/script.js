@@ -47,14 +47,14 @@ function showDetails(lab) {
                 <div class="on-hover-up">
                     <div class="redirectButtonSymbol"><img src="../assets/symbols/repository-symbol.svg">
                     </div>
-                    <div>View Repo</div>
+                    <div class="button-text">View Repo</div>
                 </div>
             </a>
             <a href="./labs/${lab["filename"]}.pdf" target="_blank" class="redirectButton">
                 <div class="on-hover-up">
                     <div class="redirectButtonSymbol"><img src="../assets/symbols/document-symbol.svg">
                     </div>
-                    <div>View Write-up</div>
+                    <div class="button-text">View Write-up</div>
                 </div>
             </a>
         </div>
