@@ -1,40 +1,64 @@
 {
-    "labs": [
-        {
-            "name": "External Border Gateway Protocol",
-            "filename": "eBGPLab",
-            "one-liner": "How to setup eBPG with 3 autonomous systems, using IPv6 & IPv4",
-            "purpose": "The purpose of this lab is to set up 3 AS’s and use eBGP (external border gateway protocol) to route between the 3 AS’s. To complete this lab, one needs to know how to redistribute routes between gateway protocols and routing protocols, create address-families, and declare eBGP neighbors. And although not central to the eBGP, one still must have the skills needed to set up networks with routing protocols, including advertising interfaces, subnetting, and debugging."
-        },
-        {
-            "name": "Standalone Access Point",
-            "filename": "StandaloneAccessPointLab",
-            "one-liner": "Configuring an access point that broadcasts multiple SSIDs and leverages RADIUS",
-            "purpose": "The purpose of this lab is to set up a standalone access point (AP) that broadcasts a 2.4GHz network using a pre-shared key (PSK) to authenticate users; 5GHz network also using a pre-shared key to authenticate users; and a 5GHz network with enterprise authentication using RADIUS. All these Wi-Fi networks will be secured using WPA2."
-        },
-        {
-            "name": "IS-IS Routing Protocol",
-            "filename": "IS-ISRoutingLab",
-            "one-liner": "Configuring Intermediate System to Intermediate System across 6 routers",
-            "purpose": "The purpose of this lab was to set up three Intermediate System to Intermediate System (IS-IS) areas with at least 6 routers in the topology in a linear fashion. This would result in end- to-end connectivity in the host devices at each end of the topology. To complete this task, one needs to learn how to configure IS-IS on a router as well as how to enable IS-IS routing on interfaces."
-        },
-        {
-            "name": "Internal Border Gateway Protocol",
-            "filename": "iBGPLab",
-            "one-liner": "Configuring iBPG within an autonomous system, using IPv6 & IPv4",
-            "purpose": "The purpose of this lab is to use Internal Border Gateway Protocol (iBGP) to share routes in and out of an autonomous system (AS) by establishing iBGP neighborships. Additionally, eBGP will be used to share route information between the other two AS’s. As a part of this lab, knowledge about using route-reflectors, declaring iBGP neighbors, and using an interior gateway protocol (IGP) to help BGP packets get navigated between iBGP neighbors will be integral to setting up iBGP. For eBGP, skills about how to redistribute routes and how to use eBGP to route between AS’s will be important for this lab."
-        },
-        {
-            "name": "Layer 2 Attacks",
-            "filename": "Layer2AttacksLab",
-            "one-liner": "Research around performing and preventing common layer 2 attacks",
-            "purpose": "The purpose of this lab is to perform three layer 2 attacks to understand them. Then to discover how to prevent and mitigate these attacks. This lab’s purpose is to demonstrate practices that can prevent a network from being attacked from layer 2. The following attacks have been performed CAM table overflow, DHCP starvation, VLAN hopping, ARP spoofing"
-        },
-        {
-            "name": "Multi-Area OSPF Configuration",
-            "filename": "MultiareaOSPFLab",
-            "one-liner": "A \"how to\" for multi-area OSPF (3 areas; 2 routers in each)",
-            "purpose": "This lab's purpose is to create a multi-area Open Shortest Path First (OSPF) routing process with at least 3 areas, 2 routers in each area, and one layer 3 switch between 2 areas. For this lab, one needs to understand how to create subnets for networks, advertise interfaces for OSPF, and connect links between devices."
-        }
-    ]
+  "labs": [
+    {
+      "name": "External Border Gateway Protocol",
+      "filename": "eBGPLab",
+      "one-liner": "How to setup eBPG with 3 autonomous systems, using IPv6 & IPv4",
+      "purpose": "The purpose of this lab is to set up 3 AS’s and use eBGP (external border gateway protocol) to route between the 3 AS’s. To complete this lab, one needs to know how to redistribute routes between gateway protocols and routing protocols, create address-families, and declare eBGP neighbors. And although not central to the eBGP, one still must have the skills needed to set up networks with routing protocols, including advertising interfaces, subnetting, and debugging."
+    },
+    {
+      "name": "Standalone Access Point",
+      "filename": "StandaloneAccessPointLab",
+      "one-liner": "Configuring an access point that broadcasts multiple SSIDs and leverages RADIUS",
+      "purpose": "The purpose of this lab is to set up a standalone access point (AP) that broadcasts a 2.4GHz network using a pre-shared key (PSK) to authenticate users; 5GHz network also using a pre-shared key to authenticate users; and a 5GHz network with enterprise authentication using RADIUS. All these Wi-Fi networks will be secured using WPA2."
+    },
+    {
+      "name": "Global Protect VPN on a PA-220",
+      "filename": "PA-220VPNLab",
+      "one-liner": "Configuring a PA-220 SOHO firewall to allow VPN connections and remote desktop connections",
+      "purpose": "The purpose of this lab is to configure a remote access method that an employee could use in a corporate setting to access the company office’s network remotely. To complete this task a virtual private network (VPN) must be set up by configuring a portal, gateway and tunnel that clients can use to gain access to the local area network (LAN) of an office network. Additionally, some machines in the LAN will be arranged to receive remote desktop protocol (RDP) packets, so that employees can access machines with possibly sensitive information that must remain at offices."
+    },
+    {
+      "name": "Internal Border Gateway Protocol",
+      "filename": "iBGPLab",
+      "one-liner": "Configuring iBPG within an autonomous system, using IPv6 & IPv4",
+      "purpose": "The purpose of this lab is to use Internal Border Gateway Protocol (iBGP) to share routes in and out of an autonomous system (AS) by establishing iBGP neighborships. Additionally, eBGP will be used to share route information between the other two AS’s. As a part of this lab, knowledge about using route-reflectors, declaring iBGP neighbors, and using an interior gateway protocol (IGP) to help BGP packets get navigated between iBGP neighbors will be integral to setting up iBGP. For eBGP, skills about how to redistribute routes and how to use eBGP to route between AS’s will be important for this lab."
+    },
+    {
+      "name": "Configuring SOHO for a Fortigate 40F",
+      "filename": "FortiGate40FSOHOLab",
+      "one-liner": "How to configure a Fortigate 40F for a small office or home office.",
+      "purpose": "This lab details how to factory reset a FortiGate 40F and set it up in a small office/home office (SOHO) configuration. This configuration is the base configuration for a small office, opening paths to configure security policies, virtual private networks (VPNs), and other Fortinet devices. Though very similar to the default SOHO configuration, there is more security in the form of moving the management interface off the LAN hardware switch."
+    },
+    {
+      "name": "IS-IS Routing Protocol",
+      "filename": "IS-ISRoutingLab",
+      "one-liner": "Configuring Intermediate System to Intermediate System across 6 routers",
+      "purpose": "The purpose of this lab was to set up three Intermediate System to Intermediate System (IS-IS) areas with at least 6 routers in the topology in a linear fashion. This would result in end- to-end connectivity in the host devices at each end of the topology. To complete this task, one needs to learn how to configure IS-IS on a router as well as how to enable IS-IS routing on interfaces."
+    },
+    {
+      "name": "PA-220 SOHO Configuration",
+      "filename": "PA-220SOHOLAB",
+      "one-liner": "Configuring a PA-220 for a small office or home office",
+      "purpose": "The purpose of this lab is to configure a PA-220 firewall with a small office/home office (SOHO) configuration. In general, SOHO firewalls will have to be configured to give IP addresses through Dynamic Host Configuration Protocol (DHCP) and translate addresses through Network Address Translation (NAT) in addition to filtering unsafe traffic. For the purposes of this lab, simultaneous internet connection and management of the firewall will be focused on, rather than filtering. "
+    },
+    {
+      "name": "URL Filtering on a PA-220",
+      "filename": "PA-220URLFilteringLab",
+      "one-liner": "Configuring a SOHO PA-220 with URL Filtering",
+      "purpose": "The purpose of this lab is to configure a PA-220 firewall to filter uniform resource locators (URLs) or links for an elementary school and allow administrators to bypass the filter with an override page. The firewall will first have to be configured for a small office/home office (SOHO) so that it can provide internet connectivity and obtain internet connectivity to Palo Alto’s servers. This configuration will allow the firewall to receive updates on URL categories and other security updates on the PA-220."
+    },
+    {
+      "name": "Layer 2 Attacks",
+      "filename": "Layer2AttacksLab",
+      "one-liner": "Research around performing and preventing common layer 2 attacks",
+      "purpose": "The purpose of this lab is to perform three layer 2 attacks to understand them. Then to discover how to prevent and mitigate these attacks. This lab’s purpose is to demonstrate practices that can prevent a network from being attacked from layer 2. The following attacks have been performed CAM table overflow, DHCP starvation, VLAN hopping, ARP spoofing"
+    },
+    {
+      "name": "Multi-Area OSPF Configuration",
+      "filename": "MultiareaOSPFLab",
+      "one-liner": "A \"how to\" for multi-area OSPF (3 areas; 2 routers in each)",
+      "purpose": "This lab's purpose is to create a multi-area Open Shortest Path First (OSPF) routing process with at least 3 areas, 2 routers in each area, and one layer 3 switch between 2 areas. For this lab, one needs to understand how to create subnets for networks, advertise interfaces for OSPF, and connect links between devices."
+    }
+  ]
 }
