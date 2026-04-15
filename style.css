@@ -101,16 +101,6 @@
     font-weight: bold;
 }
 
-.sectionMore {
-    text-decoration: underline 0.1em rgba(0, 0, 0, 0);
-    transition: text-decoration-color 0.3s;
-}
-
-.sectionMore:hover {
-    text-decoration-color: white;
-    text-decoration: underline 0.1em;
-}
-
 .sectionBody {
     margin: 0.5rem 0rem 0.5rem 0rem;
 }
@@ -131,7 +121,7 @@
     flex-grow: 1;
 }
 
-.block:hover .blockTitle {
+.block:hover>.blockTitle {
     text-decoration-color: white;
     text-decoration: underline 0.1em;
 }
