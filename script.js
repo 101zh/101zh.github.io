@@ -4,7 +4,7 @@ const labs = []
 const maxLabsShown = 4
 
 const html =
-    `   <div class="block">
+    `   <div class="block on-hover-up">
             <div class="blockTitle">labname</div>
             <div class="blockBody">ONELINER</div>
         </div>
@@ -27,6 +27,7 @@ function createElementFromHTML(htmlString, href) {
     var a = document.createElement("a");
     a.innerHTML = htmlString.trim();
     a.href = href
+    a.target = "_blank"
     a.style.display = "flex"
     labs.push(a)
 

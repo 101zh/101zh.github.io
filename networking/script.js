@@ -43,18 +43,18 @@ function showDetails(lab) {
     <div id="modal-right">
         <p class="modal-purpose">Purpose: ${lab["purpose"]}</p>
         <div class="modal-redirects">
-            <a href="https://github.com/101zh/${lab["filename"]}" class="redirectButton">
-                <div>
+            <a href="https://github.com/101zh/${lab["filename"]}" target="_blank" rel="noopener noreferrer" class="redirectButton">
+                <div class="on-hover-up animated-underline">
                     <div class="redirectButtonSymbol"><img src="../assets/symbols/repository-symbol.svg">
                     </div>
-                    <div>View Repo</div>
+                    <div class="button-text">View Repo</div>
                 </div>
             </a>
-            <a href="./labs/${lab["filename"]}.pdf" class="redirectButton">
-                <div>
+            <a href="./labs/${lab["filename"]}.pdf" target="_blank" class="redirectButton">
+                <div class="on-hover-up animated-underline">
                     <div class="redirectButtonSymbol"><img src="../assets/symbols/document-symbol.svg">
                     </div>
-                    <div>View Write-up</div>
+                    <div class="button-text">View Write-up</div>
                 </div>
             </a>
         </div>

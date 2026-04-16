@@ -3,16 +3,13 @@
     margin-bottom: 1rem;
     font-size: 2rem;
 
-    text-decoration: underline 0.1em rgba(0, 0, 0, 0);
-
     position: relative;
     left: 0rem;
-    transition: left 0.15s ease, text-decoration-color 0.2s ease;
+    transition: left 0.15s ease;
 }
 
 .backButton:hover {
     left: -0.75rem;
-    text-decoration-color: white;
 }
 
 .header {
@@ -150,12 +147,6 @@
     background-color: rgba(0, 0, 0, 0);
     font-size: 2.0rem;
     cursor: pointer;
-    text-decoration: underline 0.1em rgba(0, 0, 0, 0);
-    transition: text-decoration-color 0.2s ease;
-}
-
-.close-button:hover {
-    text-decoration-color: white;
 }
 
 #modal-left {
@@ -242,6 +233,11 @@
     height: 100%;
     object-position: center;
     object-fit: contain;
+}
+
+.button-text{
+    align-self: center;
+    font-size: 1.2rem;
 }
 
 @media (orientation: landscape) {

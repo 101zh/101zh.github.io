@@ -1,0 +1,10 @@
+.on-hover-up {
+    position: relative;
+
+    top: 0rem;
+    transition: top ease 0.2s;
+}
+
+.on-hover-up:hover {
+    top: -0.25rem;
+}
