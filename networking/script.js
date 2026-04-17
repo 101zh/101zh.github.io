@@ -2,7 +2,7 @@ const container = document.getElementById("container")
 
 const html =
   `   <div class="block">
-            <div class="labTitle">labname</div>
+            <div class="labTitle animated-underline">labname</div>
             <div class="thumbnail"><img src="./lab-thumbnails/filename.jpg"></div>
         </div>
     `

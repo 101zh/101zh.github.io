@@ -82,6 +82,10 @@
     transform: scale(1.05)
 }
 
+.block:hover>.labTitle {
+    text-decoration: underline 0.1em white;
+}
+
 .labTitle {
     color: white;
     font-weight: bold;
