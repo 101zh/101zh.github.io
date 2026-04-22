@@ -38,7 +38,7 @@
     },
     {
       "name": "PA-220 SOHO Configuration",
-      "filename": "PA-220SOHOLAB",
+      "filename": "PA-220SOHOLab",
       "one-liner": "Configuring a PA-220 for a small office or home office",
       "purpose": "The purpose of this lab is to configure a PA-220 firewall with a small office/home office (SOHO) configuration. In general, SOHO firewalls will have to be configured to give IP addresses through Dynamic Host Configuration Protocol (DHCP) and translate addresses through Network Address Translation (NAT) in addition to filtering unsafe traffic. For the purposes of this lab, simultaneous internet connection and management of the firewall will be focused on, rather than filtering. "
     },
