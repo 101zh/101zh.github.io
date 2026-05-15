@@ -7,10 +7,10 @@
       "purpose": "The purpose of this lab is to set up 3 AS’s and use eBGP (external border gateway protocol) to route between the 3 AS’s. To complete this lab, one needs to know how to redistribute routes between gateway protocols and routing protocols, create address-families, and declare eBGP neighbors. And although not central to the eBGP, one still must have the skills needed to set up networks with routing protocols, including advertising interfaces, subnetting, and debugging."
     },
     {
-      "name": "Standalone Access Point",
-      "filename": "StandaloneAccessPointLab",
-      "one-liner": "Configuring an access point that broadcasts multiple SSIDs and leverages RADIUS",
-      "purpose": "The purpose of this lab is to set up a standalone access point (AP) that broadcasts a 2.4GHz network using a pre-shared key (PSK) to authenticate users; 5GHz network also using a pre-shared key to authenticate users; and a 5GHz network with enterprise authentication using RADIUS. All these Wi-Fi networks will be secured using WPA2."
+      "name": "FortiGate 40F: Configuring APs with a WLC",
+      "filename": "FortiGate40FWLANControllerLab",
+      "one-liner": "Using a FortiGate 40F as a WLC to configure a FortiAP with a WPA2 Enterprise security SSID",
+      "purpose": "The purpose of this lab is to configure a small office or home office (SOHO) access point with a FortiGate 40F firewall, using its WLC capabilities. This lab will show how to configure a 2.5GHz pre-shared key (PSK) network, a 5GHz PSK network, and 5GHz Enterprise network. In order to configure the enterprise network there needs to be a Remote Authentication Dial-In User Service (RADIUS) server. For this lab, the RADIUS server was hosted on a laptop running Linux."
     },
     {
       "name": "Global Protect VPN on a PA-220",
@@ -29,6 +29,12 @@
       "filename": "FortiGate40FSOHOLab",
       "one-liner": "How to configure a Fortigate 40F for a small office or home office.",
       "purpose": "This lab details how to factory reset a FortiGate 40F and set it up in a small office/home office (SOHO) configuration. This configuration is the base configuration for a small office, opening paths to configure security policies, virtual private networks (VPNs), and other Fortinet devices. Though very similar to the default SOHO configuration, there is more security in the form of moving the management interface off the LAN hardware switch."
+    },
+    {
+      "name": "Standalone Access Point",
+      "filename": "StandaloneAccessPointLab",
+      "one-liner": "Configuring an access point that broadcasts multiple SSIDs and leverages RADIUS",
+      "purpose": "The purpose of this lab is to set up a standalone access point (AP) that broadcasts a 2.4GHz network using a pre-shared key (PSK) to authenticate users; 5GHz network also using a pre-shared key to authenticate users; and a 5GHz network with enterprise authentication using RADIUS. All these Wi-Fi networks will be secured using WPA2."
     },
     {
       "name": "IS-IS Routing Protocol",
