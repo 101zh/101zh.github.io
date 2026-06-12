@@ -58,15 +58,15 @@
     overflow-wrap: anywhere;
 }
 
-#bio{
+#bio {
     display: none;
     margin-top: 0.5rem;
     font-family: Jost, Terminus, Arial, sans-serif;
     font-weight: lighter;
 }
 
-@media (width>=550px){
-    #bio{
+@media (width>=550px) {
+    #bio {
         display: flex;
     }
 }
@@ -101,11 +101,15 @@
     font-weight: bold;
 }
 
+.sectionRedirect {
+    font-weight: bold;
+}
+
 .sectionBody {
     margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
-#networkingSectionBody{
+#networkingSectionBody {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 1rem;
