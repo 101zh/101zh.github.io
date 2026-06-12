@@ -1,4 +1,5 @@
 const container = document.getElementById("container")
+var labInfoArray = "";
 
 const html =
   `   <div class="block">
@@ -10,9 +11,12 @@ const html =
 fetch("../assets/labs.json")
   .then(response => response.text())
   .then((textContent) => {
-    const labInfoArray = JSON.parse(textContent)["labs"]
+    labInfoArray = JSON.parse(textContent)["labs"]
     for (let i = 0; i < labInfoArray.length; i++) {
       const lab = labInfoArray[i];
+      lab["index"] = i;
+      labInfoArray[i] = lab;
+
       console.log(container)
       container?.appendChild(createElementFromHTML(html.replaceAll("filename", lab["filename"]).replace("labname", lab["name"]), lab))
     }
@@ -21,45 +25,39 @@ fetch("../assets/labs.json")
 
 
 function createElementFromHTML(htmlString, lab) {
-  var a = document.createElement('div')
-  a.innerHTML = htmlString.trim()
-  a.style.display = "flex"
-  a.onclick = () => showDetails(lab)
+  var div = document.createElement('div')
+  div.innerHTML = htmlString.trim()
+  div.style.display = "flex"
+  div.onclick = () => showDetails(lab)
 
-  return a;
+  return div;
 }
 
 function showDetails(lab) {
+  const i = lab["index"];
+
   const modal = document.getElementById('labModal');
   const details = document.getElementById('modal-details');
+  const modalTitle = document.getElementById("modal-title");
+  const modalImage = document.getElementById("modal-image");
+  const modalPurpose = document.getElementById("modal-purpose");
+  const repoLink = document.getElementById("repo-link");
+  const writeUpLink = document.getElementById("write-up-link");
 
-  details.innerHTML = `
-    <div id="modal-left">
-        <h2 class="modal-title">${lab["name"]}</h2>
-        <div class="modal-image-container">
-            <img class="modal-image" src="./lab-thumbnails/${lab["filename"]}.jpg">
-        </div>
-    </div>
-    <div id="modal-right">
-        <p class="modal-purpose">Purpose: ${lab["purpose"]}</p>
-        <div class="modal-redirects">
-            <a href="https://github.com/101zh/${lab["filename"]}" target="_blank" rel="noopener noreferrer" class="redirectButton">
-                <div class="on-hover-up animated-underline">
-                    <div class="redirectButtonSymbol"><img src="../assets/symbols/repository-symbol.svg">
-                    </div>
-                    <div class="button-text">View Repo</div>
-                </div>
-            </a>
-            <a href="./labs/${lab["filename"]}.pdf" target="_blank" class="redirectButton">
-                <div class="on-hover-up animated-underline">
-                    <div class="redirectButtonSymbol"><img src="../assets/symbols/document-symbol.svg">
-                    </div>
-                    <div class="button-text">View Write-up</div>
-                </div>
-            </a>
-        </div>
-    </div>
-    `;
+  modalTitle.innerHTML = `${lab["name"]}`;
+  modalImage.src = `./lab-thumbnails/${lab["filename"]}.jpg`;
+  modalPurpose.innerHTML = `Purpose: ${lab["purpose"]}`;
+  repoLink.href = `https://github.com/101zh/${lab["filename"]}`;
+  writeUpLink.href = `./labs/${lab["filename"]}.pdf`;
+
+  var prevIndex = (i - 1 < 0) ? labInfoArray.length - 1 : i - 1;
+  var nextIndex = (i + 1 >= labInfoArray.length) ? 0 : i + 1;
+  const prevButton = document.getElementById("modal-prev")
+  const nextButton = document.getElementById("modal-next")
+
+  prevButton.onclick = () => showDetails(labInfoArray[prevIndex])
+  nextButton.onclick = () => showDetails(labInfoArray[nextIndex])
+
   modal.style.display = "flex";
 }
 
