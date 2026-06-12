@@ -4,7 +4,7 @@ var labInfoArray = "";
 const html =
   `   <div class="block">
             <div class="labTitle animated-underline">labname</div>
-            <div class="thumbnail"><img src="./lab-thumbnails/filename.jpg"></div>
+            <div class="thumbnail"><img src="../assets/lab-thumbnails/filename.jpg"></div>
         </div>
     `
 
@@ -45,10 +45,10 @@ function showDetails(lab) {
   const writeUpLink = document.getElementById("write-up-link");
 
   modalTitle.innerHTML = `${lab["name"]}`;
-  modalImage.src = `./lab-thumbnails/${lab["filename"]}.jpg`;
+  modalImage.src = `../assets/lab-thumbnails/${lab["filename"]}.jpg`;
   modalPurpose.innerHTML = `Purpose: ${lab["purpose"]}`;
   repoLink.href = `https://github.com/101zh/${lab["filename"]}`;
-  writeUpLink.href = `./labs/${lab["filename"]}.pdf`;
+  writeUpLink.href = `../assets/labs/${lab["filename"]}.pdf`;
 
   var prevIndex = (i - 1 < 0) ? labInfoArray.length - 1 : i - 1;
   var nextIndex = (i + 1 >= labInfoArray.length) ? 0 : i + 1;
