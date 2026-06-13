@@ -4,7 +4,7 @@ var labInfoArray = "";
 const html =
   `   <div class="block">
             <div class="labTitle animated-underline">labname</div>
-            <div class="thumbnail"><img src="../assets/lab-thumbnails/filename.jpg"></div>
+            <div class="thumbnail"><img src="../assets/lab-thumbnails/filename.webp"></div>
         </div>
     `
 
@@ -45,7 +45,7 @@ function showDetails(lab) {
   const writeUpLink = document.getElementById("write-up-link");
 
   modalTitle.innerHTML = `${lab["name"]}`;
-  modalImage.src = `../assets/lab-thumbnails/${lab["filename"]}.jpg`;
+  modalImage.src = `../assets/lab-thumbnails/${lab["filename"]}.webp`;
   modalPurpose.innerHTML = `Purpose: ${lab["purpose"]}`;
   repoLink.href = `https://github.com/101zh/${lab["filename"]}`;
   writeUpLink.href = `../assets/labs/${lab["filename"]}.pdf`;
