@@ -13,16 +13,22 @@
       "purpose": "The purpose of this lab is to configure a small office or home office (SOHO) access point with a FortiGate 40F firewall, using its WLC capabilities. This lab will show how to configure a 2.5GHz pre-shared key (PSK) network, a 5GHz PSK network, and 5GHz Enterprise network. In order to configure the enterprise network there needs to be a Remote Authentication Dial-In User Service (RADIUS) server. For this lab, the RADIUS server was hosted on a laptop running Linux."
     },
     {
+      "name": "URL Filtering on a PA-220",
+      "filename": "PA-220URLFilteringLab",
+      "one-liner": "Configuring a SOHO PA-220 with URL Filtering",
+      "purpose": "The purpose of this lab is to configure a PA-220 firewall to filter uniform resource locators (URLs) or links for an elementary school and allow administrators to bypass the filter with an override page. The firewall will first have to be configured for a small office/home office (SOHO) so that it can provide internet connectivity and obtain internet connectivity to Palo Alto’s servers. This configuration will allow the firewall to receive updates on URL categories and other security updates on the PA-220."
+    },
+    {
+      "name": "FortiGate 40F: Configuring a VPN Server",
+      "filename": "FortiGate40FVPNLab",
+      "one-liner": "Configuring a FortiGate 40F as a dialup IPsec VPN server, which could be used in a small office",
+      "purpose": "The purpose of this lab is to configure a FortiGate 40F firewall with a secure IPsec remote access VPN, so that a remote client can initiate a tunnel connection to the firewall. Additionally, remote desktop protocol was configured on one of the lan PCs to simulate a practical use of a VPN in an office workplace."
+    },
+    {
       "name": "Global Protect VPN on a PA-220",
       "filename": "PA-220VPNLab",
       "one-liner": "Configuring a PA-220 SOHO firewall to allow VPN connections and remote desktop connections",
       "purpose": "The purpose of this lab is to configure a remote access method that an employee could use in a corporate setting to access the company office’s network remotely. To complete this task a virtual private network (VPN) must be set up by configuring a portal, gateway and tunnel that clients can use to gain access to the local area network (LAN) of an office network. Additionally, some machines in the LAN will be arranged to receive remote desktop protocol (RDP) packets, so that employees can access machines with possibly sensitive information that must remain at offices."
-    },
-    {
-      "name": "Internal Border Gateway Protocol",
-      "filename": "iBGPLab",
-      "one-liner": "Configuring iBPG within an autonomous system, using IPv6 & IPv4",
-      "purpose": "The purpose of this lab is to use Internal Border Gateway Protocol (iBGP) to share routes in and out of an autonomous system (AS) by establishing iBGP neighborships. Additionally, eBGP will be used to share route information between the other two AS’s. As a part of this lab, knowledge about using route-reflectors, declaring iBGP neighbors, and using an interior gateway protocol (IGP) to help BGP packets get navigated between iBGP neighbors will be integral to setting up iBGP. For eBGP, skills about how to redistribute routes and how to use eBGP to route between AS’s will be important for this lab."
     },
     {
       "name": "Configuring SOHO for a Fortigate 40F",
@@ -37,6 +43,12 @@
       "purpose": "The purpose of this lab is to set up a standalone access point (AP) that broadcasts a 2.4GHz network using a pre-shared key (PSK) to authenticate users; 5GHz network also using a pre-shared key to authenticate users; and a 5GHz network with enterprise authentication using RADIUS. All these Wi-Fi networks will be secured using WPA2."
     },
     {
+      "name": "Internal Border Gateway Protocol",
+      "filename": "iBGPLab",
+      "one-liner": "Configuring iBPG within an autonomous system, using IPv6 & IPv4",
+      "purpose": "The purpose of this lab is to use Internal Border Gateway Protocol (iBGP) to share routes in and out of an autonomous system (AS) by establishing iBGP neighborships. Additionally, eBGP will be used to share route information between the other two AS’s. As a part of this lab, knowledge about using route-reflectors, declaring iBGP neighbors, and using an interior gateway protocol (IGP) to help BGP packets get navigated between iBGP neighbors will be integral to setting up iBGP. For eBGP, skills about how to redistribute routes and how to use eBGP to route between AS’s will be important for this lab."
+    },
+    {
       "name": "IS-IS Routing Protocol",
       "filename": "IS-ISRoutingLab",
       "one-liner": "Configuring Intermediate System to Intermediate System across 6 routers",
@@ -47,12 +59,6 @@
       "filename": "PA-220SOHOLab",
       "one-liner": "Configuring a PA-220 for a small office or home office",
       "purpose": "The purpose of this lab is to configure a PA-220 firewall with a small office/home office (SOHO) configuration. In general, SOHO firewalls will have to be configured to give IP addresses through Dynamic Host Configuration Protocol (DHCP) and translate addresses through Network Address Translation (NAT) in addition to filtering unsafe traffic. For the purposes of this lab, simultaneous internet connection and management of the firewall will be focused on, rather than filtering. "
-    },
-    {
-      "name": "URL Filtering on a PA-220",
-      "filename": "PA-220URLFilteringLab",
-      "one-liner": "Configuring a SOHO PA-220 with URL Filtering",
-      "purpose": "The purpose of this lab is to configure a PA-220 firewall to filter uniform resource locators (URLs) or links for an elementary school and allow administrators to bypass the filter with an override page. The firewall will first have to be configured for a small office/home office (SOHO) so that it can provide internet connectivity and obtain internet connectivity to Palo Alto’s servers. This configuration will allow the firewall to receive updates on URL categories and other security updates on the PA-220."
     },
     {
       "name": "Layer 2 Attacks",
