@@ -118,6 +118,7 @@
 }
 
 .block {
+    cursor: pointer;
     box-sizing: border-box;
     background-color: rgb(4, 4, 0);
     border: 0.1rem solid white;
