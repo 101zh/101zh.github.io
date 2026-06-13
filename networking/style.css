@@ -34,7 +34,7 @@
     }
 }
 
-#container {
+#lab-container {
     padding: 0.5rem 2rem 0.5rem 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -51,7 +51,7 @@
         margin-right: auto;
     }
 
-    #container {
+    #lab-container {
         width: 80vw;
         margin-left: auto;
         margin-right: auto;
@@ -59,6 +59,7 @@
 }
 
 .block {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     background-color: rgb(10, 10, 10);

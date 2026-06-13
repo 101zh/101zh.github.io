@@ -1,0 +1,34 @@
+{
+    "certs": [
+        {
+            "name": "Cisco Certified Network Associate (CCNA)",
+            "verification": "https://cp.certmetrics.com/cisco/en/public/verify/credential/6736f6eaf0264df4b165298be6ff797c",
+            "info": "https://learningnetwork.cisco.com/s/ccna-exam-topics",
+            "filename": "CCNA"
+        },
+        {
+            "name": "AWS Certified Cloud Practitioner",
+            "verification": "https://cp.certmetrics.com/amazon/en/public/verify/credential/83423a3e66e04d9581470582b2bdc42c",
+            "info": "https://docs.aws.amazon.com/pdfs/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.pdf",
+            "filename": "AWSCCP"
+        },
+        {
+            "name": "CCNA: Enterprise Networking, Security, and Automation",
+            "verification": "https://www.credly.com/badges/d92b41ae-d160-4972-bcd5-1cb209c2fd88",
+            "info": "https://www.netacad.com/courses/ccna-enterprise-networking-security-automation?courseLang=en-US",
+            "filename": "CCNAENSA"
+        },
+        {
+            "name": "CCNA: Switching, Routing, and Wireless Essentials",
+            "verification": "https://www.credly.com/badges/1dc4dcd1-8963-4eca-aaa6-92edede99d28",
+            "info": "https://www.netacad.com/courses/ccna-switching-routing-wireless-essentials",
+            "filename": "CCNASRWE"
+        },
+        {
+            "name": "CCNA: Introduction to Networks",
+            "verification": "https://www.credly.com/badges/196feccc-0dc9-4514-ab93-30483ba967e4",
+            "info": "https://www.netacad.com/courses/ccna-introduction-networks",
+            "filename": "CCNAITN"
+        }
+    ]
+}
