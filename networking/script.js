@@ -1,4 +1,4 @@
-const container = document.getElementById("container")
+const container = document.getElementById("lab-container")
 var labInfoArray = "";
 
 const html =
