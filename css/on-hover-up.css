@@ -2,7 +2,7 @@
     position: relative;
 
     top: 0rem;
-    transition: top ease 0.2s;
+    transition: all ease 0.2s;
 }
 
 .on-hover-up:hover {

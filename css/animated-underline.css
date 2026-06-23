@@ -1,7 +1,7 @@
 .animated-underline {
     cursor: pointer;
     text-decoration: underline 0.1em rgba(0, 0, 0, 0);
-    transition: 0.3s ease; 
+    transition: 0.25s ease; 
 }
 
 .animated-underline:hover {

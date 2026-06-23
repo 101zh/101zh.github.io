@@ -166,11 +166,11 @@
     object-fit: contain;
 }
 
-.cert-title{
+.cert-title {
     font-size: 1.2rem;
 }
 
-.cert-body{
+.cert-body {
     margin-top: auto;
 }
 
@@ -180,7 +180,7 @@
     flex-basis: 0;
     background-color: rgba(0, 0, 0, 0);
     text-decoration: underline 0.1em rgba(0, 0, 0, 0);
-    transition: text-decoration-color 0.2s ease;
+    transition: all 0.25s ease;
 }
 
 .cert-button:hover {
@@ -191,11 +191,17 @@
     display: flex;
     flex-grow: 1;
     box-sizing: border-box;
-    border: 0.1rem solid white;
+    border: 0.05rem solid gray;
     background-color: rgba(0, 0, 0, 255);
     padding: 1rem;
     margin: 0.25rem;
     gap: 1rem;
+
+    transition: all 0.25s ease;
+}
+
+.cert-button>div:hover {
+    border-color: white;
 }
 
 .cert-button-symbol {
