@@ -7,6 +7,12 @@
             "filename": "CCNA"
         },
         {
+            "name": "CompTIA Security+ Certification",
+            "verification": "https://cp.certmetrics.com/CompTIA/en/public/verify/credential/67cd56ddf8564cccb532c24fab01ebef",
+            "info": "https://www.comptia.org/en-us/certifications/security/",
+            "filename": "SEC+"
+        },
+        {
             "name": "AWS Certified Cloud Practitioner",
             "verification": "https://cp.certmetrics.com/amazon/en/public/verify/credential/83423a3e66e04d9581470582b2bdc42c",
             "info": "https://docs.aws.amazon.com/pdfs/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.pdf",
